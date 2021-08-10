@@ -9,41 +9,40 @@
     <title>Generador de memes</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
+ <div class="contenedor-seccion-generador-memes">
     <header>
         <h1 class="titulo-de-aplicacion">Generador de Memes</h1>
         <div class="contenedor-botones">
             <button class="boton">Imagen</button>
             <button class="boton">Texto</button>
-            <button class="boton boton-modo-oscuro">Modo oscuro</button>
+            <button class="boton boton-modo-oscuro">Modo claro</button>
         
         </div>
     </header>
-    <!--
-    <main>
-        <div>
-            <p>Top text</p>
+    
+    <main class="contenedor-meme">
+        <div class="contenido-meme">
+            <p class="texto-superior">Top text</p>
             
-            <div src></div>
+            <img src id="imagen-meme" aria-label="imagen de meme">
 
-            <p>Button text</p>
+            <p class="texto-inferior">Button text</p>
         </div>
     </main>
--->
-<!--
-    <aside class="panel">
-        <button></button>
+</div>
 
+    <aside class="panel">
         <section class="panel-img-oculto">
             <h2>Imagen</h2>
             <div>
                 <h3>URL</h3>
                 <input type="text">
             </div>
-            -->
+            
 
-            <!--Fondo
+            <!--Fondo-->
 
             <div>
                 <h3>Fondo</h3>
@@ -57,9 +56,9 @@
                     </div>
                 </div>
             </div>
-            -->
+    
 
-            <!--FILTROS
+            <!--FILTROS-->
             <div>
                 <h3>Filtros</h3>
                 <div>
@@ -110,12 +109,12 @@
             <button>Reestablecer filtros</button>
 
         </section>
-        -->
 
-        <!--Panel de texto-->
+
+        <!--Panel de texto
         <section class="panel-texto">
             <h2>Texto</h2>
-
+-->
             <!--Texto
             <div>
                 <h3>Superior</h3>

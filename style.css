@@ -6,6 +6,7 @@ body, html {
     font-family: 'Montserrat', sans-serif;
     color: black;
     background-color:white;
+    display: flex;
    
      }
      
@@ -21,7 +22,7 @@ body, html {
  }
  
  h1{
- font-weight:800;
+ font-weight:600;
  font-size:40px
  }
 
@@ -29,3 +30,56 @@ body, html {
      background-color: black;
      color:white;
  }
+
+ header{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 10px;
+ }
+
+ .contenedor-meme{
+     display: flex;
+     flex-direction: column;
+     background-color: pink;
+     align-items: center;
+   
+ }
+
+ .contenido-meme{
+     width: 600px;
+     background-color: rebeccapurple;
+     padding:2px;
+     text-align: center;
+     font-weight: 800;
+     
+ }
+
+ .texto-superior{
+    background-color: seashell;
+    padding:30px;
+    width: 100%;
+
+
+ }
+
+ .texto-inferior{
+     background-color: seashell;
+     padding: 30px;
+ }
+
+ .contenedor-seccion-generador-memes{
+     width: 80%;
+
+ }
+
+ #imagen-meme{
+     width: 100%;
+     padding:80px
+ }
+
+.panel{
+    padding: 10px;
+    line-height: 1.5;
+}
