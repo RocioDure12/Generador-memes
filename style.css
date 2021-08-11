@@ -57,7 +57,7 @@ body, html {
  }
 
  .texto-superior{
-    background-color: seashell;
+
     padding:30px;
     width: 100%;
 
@@ -65,7 +65,7 @@ body, html {
  }
 
  .texto-inferior{
-     background-color: seashell;
+
      padding: 30px;
  }
 
@@ -76,7 +76,8 @@ body, html {
 
  #imagen-meme{
      width: 100%;
-     padding:80px
+     padding:80px;
+     
  }
 
 .panel{

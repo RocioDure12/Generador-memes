@@ -3,7 +3,8 @@ const botonModoOscuro=document.querySelector(".boton-modo-oscuro")
 const body= document.querySelector("body")
 
 
-const intercambiarModoOscuro= () =>{
+
+    botonModoOscuro.onclick = () =>{
     body.classList.toggle("modo-oscuro")
 
     if(body.classList.contains("modo-oscuro") === true){
@@ -13,6 +14,5 @@ const intercambiarModoOscuro= () =>{
 }
 
 
-
-botonModoOscuro.onclick=intercambiarModoOscuro
+//=intercambiarModoOscuro
 
