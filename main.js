@@ -7,12 +7,12 @@ const body= document.querySelector("body")
     botonModoOscuro.onclick = () =>{
     body.classList.toggle("modo-oscuro")
 
-    if(body.classList.contains("modo-oscuro") === true){
+    if(body.classList.contains("modo-oscuro")) {
         botonModoOscuro.textContent="Modo claro"
     }
     else {botonModoOscuro.textContent="Modo oscuro"}
 }
 
 
-//=intercambiarModoOscuro
+
 
