@@ -20,5 +20,29 @@ const imagenMeme = document.querySelector(".imagen-meme")
     imagenMeme.src = inputImagen.value
     }
 
+//FUNCION PARA BOTON DE IMAGEN Y TEXTO
+const botonPanelTexto = document.querySelector(".boton-panel-texto")
+const panelTexto= document.querySelector(".contenedor-panel-texto")
+const botonImagen= document.querySelector(".boton-panel-imagen")
+const panelImagen= document.querySelector(".panel-imagen")
+
+    botonImagen.onclick=()=>{
+    panelTexto.style.display=("none")
+    panelImagen.style.display=("block")
+
+}
+
+    botonPanelTexto.onclick=()=>{
+    panelImagen.style.display=("none")
+    panelTexto.style.display=("block")
+    }
+
+  
+
+  
+    
+
+
+
 
 

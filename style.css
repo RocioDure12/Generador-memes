@@ -80,11 +80,15 @@ body, html {
      
  }
 
-.panel{
+.panel-imagen{
     padding: 10px;
     line-height: 1.5;
 }
 
-.contenedor-panel-texto{
+.display-none{
 display: none;
+}
+
+.display-block{
+display: block;
 }
