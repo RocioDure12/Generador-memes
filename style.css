@@ -42,7 +42,7 @@ body, html {
  .contenedor-meme{
      display: flex;
      flex-direction: column;
-     background-color: pink;
+     background-color: #808080;
      align-items: center;
    
  }
@@ -52,7 +52,7 @@ body, html {
      flex-direction: column;
      align-items: center;
      width: 600px;
-     background-color: rebeccapurple;
+     background-color:white;
      padding:2px;
      text-align: center;
      font-weight: 800;
@@ -86,8 +86,11 @@ body, html {
  }
 
 .panel-imagen{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 20px;
-    line-height: 1.5;
+    
 }
 
 .display-none{
@@ -113,3 +116,11 @@ body, html {
 }
 
 /*Panel texto*/
+
+.panel-texto{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+
+}
