@@ -48,6 +48,9 @@ body, html {
  }
 
  .contenido-meme{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
      width: 600px;
      background-color: rebeccapurple;
      padding:2px;
@@ -57,21 +60,18 @@ body, html {
  }
 
  .texto-superior{
-
-    padding:30px;
+    padding:5px;
     width: 100%;
-
-
  }
 
  .texto-inferior{
 
-     padding: 30px;
+     padding: 5px;
+     width: 100%;
  }
 
  .contenedor-seccion-generador-memes{
      width: 80%;
-
  }
 
  #imagen-meme{
@@ -80,15 +80,36 @@ body, html {
      
  }
 
+ img{
+    width: 100%;
+    height: 400px;
+ }
+
 .panel-imagen{
-    padding: 10px;
+    padding: 20px;
     line-height: 1.5;
 }
 
 .display-none{
-display: none;
+    display: none;
 }
 
 .display-block{
-display: block;
+    display: block;
 }
+
+/*filtros panel imagen*/
+.contenedor-select-fondo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.boton-reestablecer-filtros{
+    padding: 10px;
+    display: flex;
+    border-radius: 20px;
+    margin-top: 20px;
+    border-radius: 1px solid black;
+}
+
+/*Panel texto*/

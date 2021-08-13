@@ -26,7 +26,7 @@
         <div class="contenido-meme">
             <p class="texto-superior">Top text</p>
             
-            <img src="" class="imagen-meme" aria-label="imagen de meme">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/31gmBn8MM3L._AC_SY200_.jpg" class="imagen-meme" aria-label="imagen de meme">
 
             <p class="texto-inferior">Bottom text</p>
         </div>
@@ -47,15 +47,23 @@
 
             <div>
                 <h3>Fondo</h3>
-                <div>
+
+                <div class="contenedor-select-fondo">
                     <div>
-                        <input>
-                        <span>#FFFFFF</span>
+                        <input type="color" aria-label="color de fondo de imagen" value="#FFFFFF">
+                      
                     </div>
                     <div>
-                        <select></select>
-                    </div>
+                        <select>
+                            <option value="1">Ninguno</option>
+                            <option value="2">Aclarar</option>
+                            <option value="3">Oscurecer</option>
+                            <option value="4">Diferencia</option>
+                            <option value="5">Luminosidad</option>
+                            <option value="6">Multiplicar</option>
+                        </select>
                 </div>
+          
             </div>
     
 
@@ -107,7 +115,8 @@
                     </div>
                 </div>
             </div>
-            <button>Reestablecer filtros</button>
+
+            <button class="boton-reestablecer-filtros">Reestablecer filtros</button>
 
         </section>
     </aside>
@@ -116,7 +125,7 @@
         <!--Panel de texto-->
     <aside class="contenedor-panel-texto display-none">
         <section class="panel-texto">
-            <h2>Texto</h2>
+        <h2>Texto</h2>
 
        <div>
             <div>
@@ -125,8 +134,8 @@
                 <div>
                     <input type="checkbox">
                     <label for="">Sin texto superior</label>
-                </div>
             </div>
+       </div>
 
                <!--Fuente-->
             <div>

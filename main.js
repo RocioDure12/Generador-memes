@@ -29,13 +29,15 @@ const panelImagen= document.querySelector(".panel-imagen")
     botonImagen.onclick=()=>{
     panelTexto.style.display=("none")
     panelImagen.style.display=("block")
-
 }
 
     botonPanelTexto.onclick=()=>{
     panelImagen.style.display=("none")
     panelTexto.style.display=("block")
-    }
+
+}
+
+//
 
   
 
