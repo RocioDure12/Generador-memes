@@ -46,11 +46,8 @@ const textoInferior=document.querySelector(".texto-inferior")
 const inputTextoInferior=document.querySelector(".input-texto-inferior")
 
     inputTextoSuperior.oninput=()=>{
-
-        textoSuperior.textContent=inputTextoSuperior.value
-        
-
-}
+         textoSuperior.textContent=inputTextoSuperior.value
+    }
 
     inputTextoInferior.oninput= () => {
         textoInferior.textContent=inputTextoInferior.value
@@ -79,17 +76,38 @@ selectFuente.onchange=()=>{
     textoInferior.style.fontFamily=selectFuente.value
 }
 
-//funcion para ocultar o mostrar texto superior e inferior
+//funcion para ocultar o mostrar texto superior
+const checkboxTextoSuperior=document.querySelector(".checkbox-texto-superior")
+checkboxTextoSuperior.onchange=()=>{
+if (checkboxTextoSuperior.checked){
+    textoSuperior.style.display="none"
+}
+else{
+    textoSuperior.style.display="block"
+}
+}
+
+//funcion para ocultar o mostrar inferior
 const checkboxTextoInferior=document.querySelector(".checkbox-texto-inferior")
+
 checkboxTextoInferior.onchange =()=>{
     if (checkboxTextoInferior.checked){
         textoInferior.style.display="none"
     }
-    else {textoInferior.style.display="block"}
+    else {
+        textoInferior.style.display="block" 
+    }
 }
-
-const inputBrillo=document.querySelector(".Brillo")
-inputBrillo.onchange=()=>{
-    imagenMeme.style.filter=`brightness(${inputBrillo.value})`
+//Funcion para modificar tamaño del texto
+const inputTamanioFuente=document.querySelector(".input-tamanio-fuente")
+inputTamanioFuente.oninput = () => {
+    textoSuperior.style.fontSize=inputTamanioFuente.value+"px"
+    textoInferior.style.fontSize=inputTamanioFuente.value+"px"
     
 }
+
+//Funcion para alinear el texto superior e inferior
+//const inputBrillo=document.querySelector(".Brillo")
+//inputBrillo.onchange=()=>{
+ //   imagenMeme.style.filter=`brightness(${inputBrillo.value})`
+
