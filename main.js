@@ -160,6 +160,14 @@ inputEspaciado.oninput = () => {
     
 }
 
+//Funcion para interlineado
+const selectInterlineado=document.querySelector(".select-interlineado")
+selectInterlineado.onchange=()=>{
+
+    textoSuperior.style.lineHeight=selectInterlineado.value
+    textoInferior.style.lineHeight=selectInterlineado.value
+}
+
 
 //const inputBrillo=document.querySelector(".Brillo")
 //inputBrillo.onchange=()=>{
