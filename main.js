@@ -54,6 +54,7 @@ const inputTextoInferior=document.querySelector(".input-texto-inferior")
 
     }
 
+   
     /*
 
 document.querySelector(".Brillo").onchange= aplicarFiltros
