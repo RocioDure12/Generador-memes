@@ -140,6 +140,19 @@ inputColorFondo.oninput=()=>{
     textoInferior.style.backgroundColor=inputColorFondo.value
 }
 
+//Funcion para cambiar el fondo a transparente
+const inputFondoTransparente=document.querySelector(".input-fondo-transparente")
+inputFondoTransparente.onchange=()=>{
+    if (inputFondoTransparente.checked){
+        textoSuperior.style.backgroundColor="transparent"
+        textoInferior.style.backgroundColor="transparent"
+    }
+    else{
+        textoSuperior.style.backgroundColor=inputColorFondo.value
+    }
+    }
+
+
 
 //const inputBrillo=document.querySelector(".Brillo")
 //inputBrillo.onchange=()=>{
