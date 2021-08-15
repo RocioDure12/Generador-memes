@@ -133,6 +133,14 @@ inputColorFuente.oninput=()=>{
     textoInferior.style.color=inputColorFuente.value
 }
 
+//Funcion para cambiar color de fondo del texto superior e inferior
+const inputColorFondo=document.querySelector(".input-color-fondo")
+inputColorFondo.oninput=()=>{
+    textoSuperior.style.backgroundColor=inputColorFondo.value
+    textoInferior.style.backgroundColor=inputColorFondo.value
+}
+
+
 //const inputBrillo=document.querySelector(".Brillo")
 //inputBrillo.onchange=()=>{
  //   imagenMeme.style.filter=`brightness(${inputBrillo.value})`
