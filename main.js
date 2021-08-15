@@ -152,6 +152,13 @@ inputFondoTransparente.onchange=()=>{
     }
     }
 
+//Funcion espaciado
+const inputEspaciado=document.querySelector(".input-espaciado")
+inputEspaciado.oninput = () => {
+    textoSuperior.style.padding=inputEspaciado.value+"px"
+    textoInferior.style.padding=inputEspaciado.value+"px"
+    
+}
 
 
 //const inputBrillo=document.querySelector(".Brillo")
