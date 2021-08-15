@@ -107,6 +107,26 @@ inputTamanioFuente.oninput = () => {
 }
 
 //Funcion para alinear el texto superior e inferior
+const botonIzquierda=document.querySelector(".boton-izquierda")
+const botonDerecha=document.querySelector(".boton-derecha")
+const botonCentro=document.querySelector(".boton-centro")
+
+botonIzquierda.onclick=()=>{
+    textoSuperior.style.textAlign="left"
+    textoInferior.style.textAlign="left"
+}
+
+botonDerecha.onclick=()=>{
+    textoSuperior.style.textAlign="right"
+    textoInferior.style.textAlign="right"
+}
+
+botonCentro.onclick=()=>{
+    textoSuperior.style.textAlign="center"
+    textoInferior.style.textAlign="center"
+}
+
+//Funcion para 
 //const inputBrillo=document.querySelector(".Brillo")
 //inputBrillo.onchange=()=>{
  //   imagenMeme.style.filter=`brightness(${inputBrillo.value})`
