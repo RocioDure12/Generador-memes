@@ -126,7 +126,13 @@ botonCentro.onclick=()=>{
     textoInferior.style.textAlign="center"
 }
 
-//Funcion para 
+//Funcion para cambiar color a la fuente
+inputColorFuente=document.querySelector(".input-color-fuente")
+inputColorFuente.oninput=()=>{
+    textoSuperior.style.color=inputColorFuente.value
+    textoInferior.style.color=inputColorFuente.value
+}
+
 //const inputBrillo=document.querySelector(".Brillo")
 //inputBrillo.onchange=()=>{
  //   imagenMeme.style.filter=`brightness(${inputBrillo.value})`
