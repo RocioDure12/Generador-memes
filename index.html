@@ -70,48 +70,48 @@
             <!--FILTROS-->
             <div>
                 <h3>Filtros</h3>
-                <div>
+                <div class="contenedor-slider">
                     <label for="">Brillo</label>
-                    <input type="range">
+                    <input type="range" min="0" max="1" value="1" step="0.1" class="Brillo">
                 </div>
                 
-                <div>
+                <div class="contenedor-slider">
                     <label for="">Opacidad</label>
-                    <input type="range">
+                    <input type="range" min="1" max="100"class="Opacidad">
                 </div>
 
-                <div>
+                <div class="contenedor-slider">
                     <label for="">Contraste</label>
-                    <input type="range">
+                    <input type="range" min="1" max="100"class="Contraste">
                 </div>
 
-                <div>
+                <div class="contenedor-slider">
                     <label for="">Desenfoque</label>
-                    <input type="range">
+                    <input type="range" min="1" max="100"class="Desenfoque">
                 </div>
 
-                <div>
+                <div class="contenedor-slider">
                     <label for="">Escala de grises</label>
-                    <input type="range">
+                    <input type="range" min="1" max="100"class="Escala-grises">
 
-                    <div>
+                    <div class="contenedor-slider">
                         <label for="">Sepia</label>
-                        <input type="range">
+                        <input type="range" min="1" max="100"class="Sepia">
                     </div>
 
-                    <div>
+                    <div class="contenedor-slider">
                         <label for="">Hue</label>
-                        <input type="range">
+                        <input type="range" min="1" max="100"class="Hue">
                     </div>
 
-                    <div>
+                    <div class="contenedor-slider">
                         <label for="">Saturado</label>
-                        <input type="range">
+                        <input type="range" min="1" max="100"class="Saturado">
                     </div>
 
-                    <div>
+                    <div class="contenedor-slider">
                         <label for="">Negativo</label>
-                        <input type="range">
+                        <input type="range" min="1" max="100"class="Negativo">
                     </div>
                 </div>
             </div>
@@ -128,32 +128,36 @@
         <h2>Texto</h2>
 
        <div>
-            <div>
+            
                 <h3>Superior</h3>
                 <textarea class="input-texto-superior" aria-label="texto superior">Top text</textarea>
                 <div>
-                    <input type="checkbox">
-                    <label for="">Sin texto superior</label>
-            </div>
+                    <input type="checkbox" class="checkbox-texto-superior">
+                    <label for="sin texto superior">Sin texto superior</label>
+                </div>
                 <h3>Inferior</h3>
                 <textarea class="input-texto-inferior" aria-label="texto inferior">Bottom text text</textarea>
                 <div>
+                    <input type="checkbox" class="checkbox-texto-inferior">
+                    <label for="sin texto inferior">Sin texto inferior</label>
+                </div>
+        
        </div>
 
                <!--Fuente-->
             <div>
                 <h3>Fuente</h3>
 
-                <select>
-                    <option value="1">Arial</option>
-                    <option value="2">Arial Black</option>
-                    <option value="3">America Typewriter</option>
-                    <option value="4">Andale Mono</option>
-                    <option value="5">Comic Sans MS</option>
-                    <option value="6">Helvetica</option>
-                    <option value="7">Impact</option>
-                    <option value="8">Verdana</option>
-                    <option value="9">Times New Roman</option>
+                <select id="select-fuente">
+                    <option value="Arial">Arial</option>
+                    <option value="Arial Black">Arial Black</option>
+                    <option value="America Typewriter">America Typewriter</option>
+                    <option value="Andale Mono">Andale Mono</option>
+                    <option value="Comic Sans MS">Comic Sans MS</option>
+                    <option value="Helvetica">Helvetica</option>
+                    <option value="Impact">Impact</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Times New Roman">Times New Roman</option>
                 </select>
             
             <div>

@@ -115,6 +115,16 @@ body, html {
     border-radius: 1px solid black;
 }
 
+.contenedor-slider{
+    width: 100%;
+    
+}
+
+.slider{
+    cursor: pointer;
+   
+}
+
 /*Panel texto*/
 
 .panel-texto{
