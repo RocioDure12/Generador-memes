@@ -54,22 +54,38 @@ const inputTextoInferior=document.querySelector(".input-texto-inferior")
 
     }
 
-   
-    /*
+//funcion actualizar filtros
 
-document.querySelector(".Brillo").onchange= aplicarFiltros
-document.querySelector(".Opacidad")
-document.querySelector(".Contraste")
-document.querySelector(".Desenfoque")
-document.querySelector(".Escala-de-grises")
-document.querySelector(".Sepia")
-document.querySelector(".Hue")
-document.querySelector(".Negativo")
+document.querySelector(".Brillo").oninput=aplicarFiltros;
+document.querySelector(".Opacidad").oninput=aplicarFiltros
+document.querySelector(".Contraste").oninput=aplicarFiltros
+document.querySelector(".Desenfoque").oninput=aplicarFiltros
+document.querySelector(".Escala-grises").oninput=aplicarFiltros
+document.querySelector(".Sepia").oninput=aplicarFiltros
+document.querySelector(".Hue").oninput=aplicarFiltros
+document.querySelector(".Saturado").oninput=aplicarFiltros
+document.querySelector(".Negativo").oninput=aplicarFiltros
+
+ function aplicarFiltros ()
+{
+    
+    const brillo = document.querySelector(".Brillo").value;
+    const opacidad = document.querySelector(".Opacidad").value;
+    const contraste =  document.querySelector(".Contraste").value;
+    const Desenfoque= document.querySelector(".Desenfoque").value;
+    const escalaGrises=document.querySelector(".Escala-grises").value;
+    const sepia = document.querySelector(".Sepia").value;
+    const hue= document.querySelector(".Hue").value;
+    const saturado=document.querySelector(".Saturado").value;
+    const Negativo=document.querySelector(".Negativo").value;
 
 
-const aplicarFiltros=()=>{
- 
-}*/
+  //imagenMeme.style.filter =`brightness(${brillo}) opacity(${opacidad}) blur(${Desenfoque}px) contrast(${contraste}%) grayscale(${escalaGrises}%) hue-rotate(${hue}deg) sepia(${sepia}%) saturate(${saturado}%) invert(${Negativo})`
+
+  imagenMeme.style.filter =`invert(${Negativo}) opacity(${opacidad}) blur(${Desenfoque}px) contrast(${contraste}%) grayscale(${escalaGrises}%) hue-rotate(${hue}deg) sepia(${sepia}%) saturate(${saturado}%) invert(${Negativo})`
+
+  
+
 //Funcion para seleccionar fuente
 const selectFuente=document.getElementById("select-fuente")
 selectFuente.onchange=()=>{
@@ -171,6 +187,6 @@ selectInterlineado.onchange=()=>{
 
 
 //const inputBrillo=document.querySelector(".Brillo")
-//inputBrillo.onchange=()=>{
- //   imagenMeme.style.filter=`brightness(${inputBrillo.value})`
-
+//inputBrillo.oninput=()=>{
+  // imagenMeme.style.filter=`brightness(${inputBrillo.value*100}%)`
+}
