@@ -79,11 +79,8 @@ document.querySelector(".Negativo").oninput=aplicarFiltros
     const saturado=document.querySelector(".Saturado").value;
     const Negativo=document.querySelector(".Negativo").value;
 
-
-  //imagenMeme.style.filter =`brightness(${brillo}) opacity(${opacidad}) blur(${Desenfoque}px) contrast(${contraste}%) grayscale(${escalaGrises}%) hue-rotate(${hue}deg) sepia(${sepia}%) saturate(${saturado}%) invert(${Negativo})`
-
   imagenMeme.style.filter =`invert(${Negativo}) opacity(${opacidad}) blur(${Desenfoque}px) contrast(${contraste}%) grayscale(${escalaGrises}%) hue-rotate(${hue}deg) sepia(${sepia}%) saturate(${saturado}%) invert(${Negativo})`
-
+}
   
 
 //Funcion para seleccionar fuente
@@ -167,8 +164,8 @@ inputFondoTransparente.onchange=()=>{
     else{
         textoSuperior.style.backgroundColor=inputColorFondo.value
     }
-    }
-
+    
+}
 //Funcion espaciado
 const inputEspaciado=document.querySelector(".input-espaciado")
 inputEspaciado.oninput = () => {
@@ -183,10 +180,4 @@ selectInterlineado.onchange=()=>{
 
     textoSuperior.style.lineHeight=selectInterlineado.value
     textoInferior.style.lineHeight=selectInterlineado.value
-}
-
-
-//const inputBrillo=document.querySelector(".Brillo")
-//inputBrillo.oninput=()=>{
-  // imagenMeme.style.filter=`brightness(${inputBrillo.value*100}%)`
 }
