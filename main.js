@@ -53,6 +53,11 @@ const inputTextoInferior=document.querySelector(".input-texto-inferior")
         textoInferior.textContent=inputTextoInferior.value
 
     }
+//funcion para cambiar fondo meme//no funciona
+const inputColorFondoImg= document.querySelector(".input-color-fondo-img")
+inputColorFondoImg.oninput=()=>{
+    imagenMeme.style.backgroundColorImage=inputColorFondoImg.value
+}
 
 //funcion actualizar filtros
 
