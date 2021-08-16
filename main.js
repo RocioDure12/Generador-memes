@@ -53,12 +53,19 @@ const inputTextoInferior=document.querySelector(".input-texto-inferior")
         textoInferior.textContent=inputTextoInferior.value
 
     }
-//funcion para cambiar fondo meme//no funciona
+//funcion para cambiar fondo meme
+const imagenMemeContenedor=document.querySelector(".contenedor-imagen")
 const inputColorFondoImg= document.querySelector(".input-color-fondo-img")
 inputColorFondoImg.oninput=()=>{
-    imagenMeme.style.backgroundColorImage=inputColorFondoImg.value
+    imagenMemeContenedor.style.backgroundColor=inputColorFondoImg.value
 }
 
+const selectBlendMode = document.querySelector(".select-blend-mode")
+selectBlendMode.oninput=()=>{
+    imagenMeme.style.mixBlendMode=selectBlendMode.value
+}
+
+  
 //funcion actualizar filtros
 
 document.querySelector(".Brillo").oninput=aplicarFiltros;
@@ -84,9 +91,26 @@ document.querySelector(".Negativo").oninput=aplicarFiltros
     const saturado=document.querySelector(".Saturado").value;
     const Negativo=document.querySelector(".Negativo").value;
 
-  imagenMeme.style.filter =`invert(${Negativo}) opacity(${opacidad}) blur(${Desenfoque}px) contrast(${contraste}%) grayscale(${escalaGrises}%) hue-rotate(${hue}deg) sepia(${sepia}%) saturate(${saturado}%) invert(${Negativo})`
+  imagenMeme.style.filter =`brightness(${brillo}) invert(${Negativo}) opacity(${opacidad}) blur(${Desenfoque}px) contrast(${contraste}%) grayscale(${escalaGrises}%) hue-rotate(${hue}deg) sepia(${sepia}%) saturate(${saturado}%) invert(${Negativo})`
 }
   
+//funcion reestablecer filtros
+    const reestablecerFiltros=document.querySelector(".boton-reestablecer-filtros")
+    reestablecerFiltros.onclick = () => {
+    document.querySelector(".Brillo").value = 1
+    document.querySelector(".Opacidad").value = 1
+    document.querySelector(".Contraste").value = 100
+    document.querySelector(".Desenfoque").value = 0
+    document.querySelector(".Escala-grises").value = 0
+    document.querySelector(".Hue").value = 0
+    document.querySelector(".Sepia").value = 0
+    document.querySelector(".Saturado").value = 100
+    document.querySelector(".Negativo").value = 0
+  
+    aplicarFiltros()
+  }
+
+
 
 //Funcion para seleccionar fuente
 const selectFuente=document.getElementById("select-fuente")

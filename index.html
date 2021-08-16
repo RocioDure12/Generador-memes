@@ -27,7 +27,8 @@
         <div class="contenido-meme">
             <p class="texto-superior">Top text</p>
             
-            <img src="https://images-na.ssl-images-amazon.com/images/I/31gmBn8MM3L._AC_SY200_.jpg" class="imagen-meme" aria-label="imagen de meme">
+            <div class="contenedor-imagen"><img src="https://images-na.ssl-images-amazon.com/images/I/31gmBn8MM3L._AC_SY200_.jpg" class="imagen-meme" aria-label="imagen de meme">
+            </div>
 
             <p class="texto-inferior">Bottom text</p>
         </div>
@@ -56,13 +57,13 @@
                       
                     </div>
                     <div>
-                        <select>
-                            <option value="1">Ninguno</option>
-                            <option value="2">Aclarar</option>
-                            <option value="3">Oscurecer</option>
-                            <option value="4">Diferencia</option>
-                            <option value="5">Luminosidad</option>
-                            <option value="6">Multiplicar</option>
+                        <select class="select-blend-mode">
+                            <option value="normal">Ninguno</option>
+                            <option value="lighten">Aclarar</option>
+                            <option value="darken">Oscurecer</option>
+                            <option value="difference">Diferencia</option>
+                            <option value="luminosity">Luminosidad</option>
+                            <option value="multiply">Multiplicar</option>
                         </select>
                 </div>
           
