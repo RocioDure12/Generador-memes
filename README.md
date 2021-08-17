@@ -1,4 +1,4 @@
-Este es mi segundo trabajo comon estudiante de Ada ITW, pero mi primer proyecto utilizando un lenguaje de programación, se trata de un editor de memes.
+Este es mi segundo trabajo como estudiante de Ada ITW, pero es mi primer proyecto utilizando un lenguaje de programación (JavaScript), se trata de un editor de memes.
 
 Las tecnologías que utilice en este proyecto son las siguientes
 
