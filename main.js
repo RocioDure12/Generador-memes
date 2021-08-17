@@ -26,7 +26,7 @@ const inputImagen = document.querySelector(".input-imagen")
 const botonPanelTexto = document.querySelector(".boton-panel-texto")
 const panelTexto= document.querySelector(".contenedor-panel-texto")
 const botonImagen= document.querySelector(".boton-panel-imagen")
-const panelImagen= document.querySelector(".panel-imagen")
+const panelImagen= document.querySelector(".contenedor-panel-imagen")
 
     botonImagen.onclick=()=>{
         panelTexto.style.display=("none")

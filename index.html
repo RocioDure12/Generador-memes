@@ -16,8 +16,8 @@
     <header>
         <h1 class="titulo-de-aplicacion">Generador de Memes</h1>
         <div class="contenedor-botones">
-            <button class="boton boton-panel-imagen">Imagen</button>
-            <button class="boton boton-panel-texto">Texto</button>
+            <button class="boton boton-panel-imagen"><i class="fas fa-image"></i> Imagen</button>
+            <button class="boton boton-panel-texto"><i class="fas fa-font"></i> Texto</button>
             <button class="boton boton-modo-oscuro">Modo claro</button>
         
         </div>
@@ -27,7 +27,7 @@
         <div class="contenido-meme">
             <p class="texto-superior">Top text</p>
             
-            <div class="contenedor-imagen"><img src="https://images-na.ssl-images-amazon.com/images/I/31gmBn8MM3L._AC_SY200_.jpg" class="imagen-meme" aria-label="imagen de meme">
+            <div contenedor-imagen><img src="https://images-na.ssl-images-amazon.com/images/I/31gmBn8MM3L._AC_SY200_.jpg" class="imagen-meme" aria-label="imagen de meme">
             </div>
 
             <p class="texto-inferior">Bottom text</p>
@@ -36,8 +36,8 @@
 </div>
     
     <!--SECCION PANEL-IMAGEN-->
-    <aside class="panel-imagen ">
-        <section class="panel-img-oculto">
+    <aside class="contenedor-panel-imagen ">
+        <section class="panel-imagen">
             <h2>Imagen</h2>
             <div>
                 <h3>URL</h3>
@@ -126,7 +126,7 @@
 
 
         <!--Panel de texto-->
-    <aside class="contenedor-panel-texto display-none">
+    <aside class="contenedor-panel-texto">
         <section class="panel-texto">
         <h2>Texto</h2>
 
@@ -162,17 +162,18 @@
                     <option value="Verdana">Verdana</option>
                     <option value="Times New Roman">Times New Roman</option>
                 </select>
-            
+
             <div>
                 <input type="number" name="tamaño fuente" aria-label="tamaño de fuente" class="input-tamanio-fuente" min="12" value="18">
             </div>
 
-            <div>
+            <div class="contenedor-botones-alineacion">
                 <button class="boton-izquierda" aria-label="alineacion a la izquierda"><i class="fas fa-align-left"></i></button>
                 <button class="boton-centro" aria-label="Alinear texto al centro"><i class="fas fa-align-center"></i></button>
                 <button class="boton-derecha" aria-label="alineacion a la derecha"><i class="fas fa-align-right"></i></button>
             </div>
             </div>
+        
     
 
             <!--Color-->
