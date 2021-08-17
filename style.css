@@ -201,5 +201,43 @@ body{
 .contenedor-interlineado{
     display: flex;
 }
+/*Media queries*/
+@media (max-width:768px){
+body{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.contenedor-seccion-generador-memes{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contenido-meme{
+    width: 100%;
+}
+
+.contenedor-panel-imagen{
+    display: block;
+    width: 100%;
+    overflow: visible;
+}
+
+.contenedor-panel-texto{
+    display: block;
+    width: 100%; 
+    overflow: visible;  
+}
+
+.boton-panel-imagen{
+    display: none;
+}
+
+.boton-panel-texto{
+    display: none;
+}
 
 
+}
