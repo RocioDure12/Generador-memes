@@ -1,14 +1,24 @@
 
+// Esta bastante desprolijo este codigo. 
+// Siempre dejá espacios entre operadores, es decir, los signos como =, {}, (), 
+
 //FUNCION MODO OSCURO-MODO CLARO
+// Deja espacios entre el igual
+// const botonModoOscuro = document.querySelector(".boton-modo-oscuro")
 const botonModoOscuro=document.querySelector(".boton-modo-oscuro")
 const body= document.querySelector("body")
 
     botonModoOscuro.onclick = () =>{
         body.classList.toggle("modo-oscuro")
 
+        // deja espacio entre el if y el parentesis, y el else y la llave 
         if(body.classList.contains("modo-oscuro")) {
             botonModoOscuro.textContent="Modo claro"
         }
+        // deja un salto de linea entre la llave y la orden
+        // else {
+        //     botonModoOscuro.textContent="Modo oscuro"
+        // }
         else {botonModoOscuro.textContent="Modo oscuro"}
 }
 
@@ -17,7 +27,8 @@ const imagenMeme = document.querySelector(".imagen-meme")
 const inputImagen = document.querySelector(".input-imagen")
 
     inputImagen.oninput= () => {
-    
+    // no dejes estos saltos de linea que no hacen nada
+
     
     imagenMeme.src = inputImagen.value
    }
@@ -29,6 +40,7 @@ const botonImagen= document.querySelector(".boton-panel-imagen")
 const panelImagen= document.querySelector(".contenedor-panel-imagen")
 
     botonImagen.onclick=()=>{
+        // los parentesis no son necesarios aca 
         panelTexto.style.display=("none")
         panelImagen.style.display=("block")
     }
@@ -45,6 +57,8 @@ const inputTextoSuperior=document.querySelector(".input-texto-superior")
 const textoInferior=document.querySelector(".texto-inferior")
 const inputTextoInferior=document.querySelector(".input-texto-inferior")
 
+// deja espacios
+// inputTextoSuperior.oninput = () => {
     inputTextoSuperior.oninput=()=>{
          textoSuperior.textContent=inputTextoSuperior.value
     }
@@ -68,6 +82,8 @@ selectBlendMode.oninput=()=>{
   
 //funcion actualizar filtros
 
+// usas dos veces estos selectores (aca y dentro de la funcion aplicarFiltros)
+// Seleccionalos con una variable asi no te repetis
 document.querySelector(".Brillo").oninput=aplicarFiltros;
 document.querySelector(".Opacidad").oninput=aplicarFiltros
 document.querySelector(".Contraste").oninput=aplicarFiltros
@@ -78,9 +94,12 @@ document.querySelector(".Hue").oninput=aplicarFiltros
 document.querySelector(".Saturado").oninput=aplicarFiltros
 document.querySelector(".Negativo").oninput=aplicarFiltros
 
+// no uses esta sintaxis, usa la funcion flecha 
  function aplicarFiltros ()
 {
-    
+// Nunca declares variables que empiezan en mayuscula. 
+// Las variables que empiezan con mayuscula significan algo muy especifico: 
+// una clase o un componente, que veremos mas adelante
     const brillo = document.querySelector(".Brillo").value;
     const opacidad = document.querySelector(".Opacidad").value;
     const contraste =  document.querySelector(".Contraste").value;
@@ -91,6 +110,12 @@ document.querySelector(".Negativo").oninput=aplicarFiltros
     const saturado=document.querySelector(".Saturado").value;
     const Negativo=document.querySelector(".Negativo").value;
 
+    // cuando la orden es muy larga, usa saltos de linea para que el lector no deba hacer scroll
+    // imagenMeme.style.filter =`
+    //     brightness(${brillo}) invert(${Negativo}) opacity(${opacidad}) 
+    //     blur(${Desenfoque}px) contrast(${contraste}%) grayscale(${escalaGrises}%) 
+    //     hue-rotate(${hue}deg) sepia(${sepia}%) saturate(${saturado}%) 
+    //     invert(${Negativo})`  
   imagenMeme.style.filter =`brightness(${brillo}) invert(${Negativo}) opacity(${opacidad}) blur(${Desenfoque}px) contrast(${contraste}%) grayscale(${escalaGrises}%) hue-rotate(${hue}deg) sepia(${sepia}%) saturate(${saturado}%) invert(${Negativo})`
 }
   
