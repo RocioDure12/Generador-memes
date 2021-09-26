@@ -6,10 +6,30 @@ body, html {
 body{
     font-family: 'Montserrat', sans-serif;
     display: flex;
+    /* nunca hay overflow en el body; esta orden no hace nada */
     overflow: hidden;
     background-color: #eeeeee;
     transition: all 0.2s;
 }
+
+/* atencion a la prolijidad, siempre dejá un espacio entre el selector y la llave y cuidá tu indentado
+no dejes espacios porque si en el identado, no omitas espacios necesarios
+las tres siguientes ordenes por ejemplo deben verse asi:
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+h1 {
+    font-weight:600;
+    font-size:40px
+} */
      
  *{
      box-sizing: border-box;
@@ -96,7 +116,7 @@ body{
     width: 100%;
     color: black;
  }
-
+/* esta clase no existe en tu html */
  .contenedor-imagen{
      width:100%;
  }
@@ -124,6 +144,7 @@ body{
 .contenedor-panel-imagen{
     display: flex;
     width: 20%;
+    /* innecesario */
     overflow: auto;
 }
 
@@ -161,6 +182,7 @@ body{
     display: flex;
     width: 20%;
     display: none;
+    /* innecesario */
     overflow: auto;
    
 }
@@ -187,9 +209,12 @@ body{
 
 .contenedor-color-fuente{
     display: flex;
+    /* innecesario */
     flex-direction: row;
 }
 
+/* si estos tres elementos tienen el mismo estilo, por que no tienen la misma clase?
+las clases son y deben ser reutilizables */
 .contenedor-color-fondo{
     display: flex;
 }
@@ -206,6 +231,7 @@ body{
 body{
     display: flex;
     flex-direction: column;
+    /* innecesario */
     overflow: auto;
 }
 
@@ -242,4 +268,7 @@ body{
 
 }
 
+/* Gracias por el aviso, Ro! No veo que hayas usado mal esta media query, pero quiza valga la pena 
+hacer una clase de repaso de diseño responsive. 
+Si me queres comentar por discord igual que temas en particular te traen dudas, lo vemos! */
 /*Hola profe! esta idea de responsive no me cierra mucho, y de hecho me parece que no funciona bien,vi que el de Ada esta distinto, es que media queries es algo que no he comprendido del todo, y eso me preocupa un poco. */
